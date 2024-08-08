@@ -1,10 +1,10 @@
 {{ define "main"}}
-  <h1>{{ .Title }}</h1>
   {{ partial "header.html" . }}
+  <h3>{{ .Title }}</h3>
   <!-- search box -->
   <div id="searchBox">
     <input type="text" id="searchBoxInput" placeholder="Search..." />
-    <img id="searchBoxIcon" src="{{ .Site.BaseURL }}/img/search.png" />
+    <img id="searchBoxIcon" src="{{ relURL "/img/search.png" }}" />
   </div>
   <!-- search results -->
   <div id="searchResults"></div>

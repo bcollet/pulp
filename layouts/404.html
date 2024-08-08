@@ -2,11 +2,15 @@
 <html>
   {{ partial "head.html" . }}
   <body>
-    {{ partial "header.html" . }}
-    <div class="main">
-      <div>
-        <h1>404 page not found.</h1>
-        <p><a href="{{ .Site.BaseURL }}">Go Home</a></p>
+    <div id="profileContainer">
+      <div id="profile">
+        {{ partial "header.html" . }}
+        <div class="main">
+          <div>
+            <h3>404 page not found</h3>
+            <p><a href="{{ relURL "" }}">Go Home</a></p>
+          </div>
+        </div>
       </div>
     </div>
     {{ partial "footer.html" . }}

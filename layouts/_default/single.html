@@ -1,6 +1,6 @@
 {{ define "main"}}
-  <h1>{{ .Title }}</h1>
   {{ partial "header.html" . }}
+  <h3>{{ .Title }}</h3>
   {{ if not .Date.IsZero }}
   <!-- date -->
   {{ $singlePageDateFormat := .Site.Params.singlePageDateFormat | default "January 2, 2006"}}

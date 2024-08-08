@@ -1,9 +1,9 @@
 <header>
-  <!-- avator -->
+  <!-- avatar -->
   <div class="avatar">
-    <img class="avatarMask" src="{{ .Site.BaseURL }}/img/{{ .Site.Params.avatar }}" alt="{{ .Site.Params.avatarDescription }}">
-    <a href="{{ .Site.BaseURL }}"><img class="avatar-border" src="{{ .Site.BaseURL }}/img/avatar-border.svg" alt=""></a>
+    <img class="avatarMask" src="{{ path.Join "/img" .Site.Params.avatar | relURL }}" alt="{{ .Site.Params.avatarDescription }}">
+    <a href="{{ relURL "" }}"><img class="avatar-border" src="{{ relURL "/img/avatar-border.svg" }}" alt=""></a>
   </div>
   <!-- author -->
-  <h2><a class="author" href="{{ .Site.BaseURL }}">{{ .Site.Params.Author }}</a></h2>
+  <h1 class="author">{{ .Site.Params.Author }}</h1>
 </header>
